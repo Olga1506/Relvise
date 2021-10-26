@@ -32,6 +32,7 @@ body{
     line-height: 1;
     font-size: 16px;
     color: #252B42;
+    background-color: #FAFAFA;
 }
 
 
@@ -145,6 +146,7 @@ body{
 .page{
     flex: 1 1 auto;
 }
+
 
 /*Main-block*/
 /*-----------------------------------------------------*/
@@ -332,6 +334,116 @@ body{
     line-height: 142%;
     letter-spacing: 0.2px;
     color: #737373;
+}
+
+/*Advantages*/
+/*--------------------------------------------------------*/
+
+.advantages__container{
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+.header-block{
+    text-align: center;
+}
+.header-block__title{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 142%;
+    letter-spacing: 0.2px;
+    color: #252B42;
+}
+
+.header-block__title:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.header-block__subtitle{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 142%;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+
+.advantages__header{
+    margin-bottom: 50px;
+}
+
+.advantages__body{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.advantages__column{
+    padding: 0 15px;
+    margin-bottom: 30px;
+    flex: 0 1 25%;
+}
+
+@media (max-width: 1020px)  {
+    .advantages__column{
+        flex: 0 1 50%;
+    }
+}
+
+@media (max-width: 992px)  {
+    .advantages__container{
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 767px)  {
+    .advantages__container{
+        padding: 30px 0;
+    }
+}
+
+
+@media (max-width: 560px)  {
+    .advantages__column{
+        flex: 0 1 100%;
+    }
+}
+
+.advantages__item{
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.advantages__item > *:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.advantages__icon{
+    height: 48px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.advantages__value{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+
+}
+
+.advantages__text{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #737373;
+
 }
 
 
